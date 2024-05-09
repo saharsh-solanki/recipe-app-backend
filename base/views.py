@@ -12,7 +12,7 @@ class BaseViewSet(mixins.ViewSetMixin, viewsets.ModelViewSet):
 
     model = None
     filterset_class = None
-    lookup_field = "uuid"
+    lookup_field = "id"
 
     def get_serializer_context(self):
         context = super().get_serializer_context()

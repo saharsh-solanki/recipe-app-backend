@@ -29,6 +29,7 @@ urlpatterns = [
     path("token/verify/", views.TokenVerifyView.as_view(), name="token_verify"),
     # Apps
     path("api/auth/", include("user.urls"), name="auth"),
+    path("api/recipe/", include("recipe.urls"), name="recipe"),
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
 
 if settings.DEBUG:

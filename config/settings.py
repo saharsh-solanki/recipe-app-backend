@@ -36,6 +36,7 @@ DJANGO_APPS = [
 LOCAL_APPS = [
     'config',
     'src.user',
+    'src.recipe',
 ]
 
 THIRD_PARTY_APPS = [
