@@ -1,6 +1,7 @@
 from django.conf import settings
 from django.conf.urls.static import static
 from django.contrib import admin
+from django.http import JsonResponse
 from django.urls import include, path
 from drf_yasg import openapi
 from drf_yasg.views import get_schema_view
@@ -17,6 +18,7 @@ schema_view = get_schema_view(
 )
 
 urlpatterns = [
+    path("", lambda x: JsonResponse({"status": "ok"})),
     path("admin/", admin.site.urls),
     path(
         "docs/",
