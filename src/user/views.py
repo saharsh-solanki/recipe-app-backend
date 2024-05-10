@@ -8,10 +8,5 @@ class UserViewSet(BaseViewSet):
     queryset = User.objects.exclude(is_superuser=True).all()
     filterset_class = filters.UserFilter
     http_method_names = ["get", "post", "patch", "put"]
+    no_permission_method = []
 
-
-    def get_permissions(self):
-        if self.action == 'create':
-            # Disable authentication for create action
-            return []
-        return super().get_permissions()

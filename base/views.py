@@ -9,10 +9,17 @@ from .helpers import get_response_message
 class BaseViewSet(mixins.ViewSetMixin, viewsets.ModelViewSet):
     filter_backends = (filters.SearchFilter, DjangoFilterBackend)
     http_method_names = ["get", "post", "patch", "delete", "put"]
+    no_permission_method = []
 
     model = None
     filterset_class = None
     lookup_field = "id"
+
+    def get_permissions(self):
+        if self.action in self.no_permission_method:
+            # Disable authentication for create action
+            return []
+        return super().get_permissions()
 
     def get_serializer_context(self):
         context = super().get_serializer_context()

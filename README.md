@@ -39,6 +39,18 @@
             $ python manage.py makemigrations
             $ python manage.py migrate
         ```
+    6. Create a supper user.Enter your email and password
+        ```bash
+        python manage.py createsuperuser
+        ```
+    7. Admin Dashboard can be accessed at this url
+       ```bash
+        http://127.0.0.1:8000/admin/login/?next=/admin/
+        ```
+    8. Swagger UI Can be accessed here 
+       ```bash
+        http://127.0.0.1:8000/docs/
+        ```
 
 * #### Run It
     Fire up the server using this one simple command:
