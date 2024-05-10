@@ -16,13 +16,13 @@
     ```
 * Then, Git clone this repo to your PC
     ```bash
-        $ git clone https://github.com/notyetpushed
+        $ git clone https://github.com/saharsh-solanki/recipe-app-backend
     ```
 
 * #### Dependencies
     1. Cd into your the cloned repo as such:
         ```bash
-            $ cd <project_name>
+            $ cd recipe-app-backend
         ```
     2. Create and fire up your virtual environment:
         ```bash
