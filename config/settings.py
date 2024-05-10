@@ -229,6 +229,8 @@ SWAGGER_SETTINGS = {
     ],
 }
 
+SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
+
 JAZZMIN_SETTINGS = {
     "site_title": "Dashboard",
     "site_header": "Recipe",
