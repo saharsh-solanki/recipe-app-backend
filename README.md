@@ -43,11 +43,15 @@
         ```bash
         python manage.py createsuperuser
         ```
-    7. Admin Dashboard can be accessed at this url
+    7. Run Server 
+       ```bash
+       python manage.py runserver
+       ```
+    8. Admin Dashboard can be accessed at this url
        ```bash
         http://127.0.0.1:8000/admin/login/?next=/admin/
         ```
-    8. Swagger UI Can be accessed here 
+    9. Swagger UI Can be accessed here 
        ```bash
         http://127.0.0.1:8000/docs/
         ```
