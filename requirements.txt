@@ -1,5 +1,6 @@
 asgiref==3.8.1
 Django==4.2.13
+django-cors-headers==4.3.1
 django-debug-toolbar==4.3.0
 django-environ==0.11.2
 django-filter==24.2
@@ -10,6 +11,7 @@ djangorestframework-simplejwt==5.3.1
 drf-excel==2.4.0
 drf-yasg==1.21.7
 et-xmlfile==1.1.0
+gunicorn==22.0.0
 inflection==0.5.1
 openpyxl==3.1.2
 packaging==24.0
